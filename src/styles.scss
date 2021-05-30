@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "PT Sans";
+    src: url("assets/fuentes/PT_Sans/PTSans-Regular.ttf");
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "PT Sans";
+}
+
+
+#menu li {
+    display:inline;
+    padding-left:8px;
+    padding-right:8px;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 14px;
+   cursor: pointer;
+   color: gray;
+   letter-spacing:1px;
+}
+#menu li:hover {
+    color: white;
+
+}
+
+#menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
