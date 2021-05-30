@@ -3,11 +3,23 @@
     src: url("assets/fuentes/PT_Sans/PTSans-Regular.ttf");
 }
 
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url("assets/fuentes/PT_Sans/PTSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans Italic";
+    src: url("assets/fuentes/PT_Sans/PTSans-Italic.ttf");
+}
+
 
 body{
     background-color: black;
     color: white;
     font-family: "PT Sans";
+    position: relative;
+    margin: 0;
 }
 
 
@@ -19,7 +31,7 @@ body{
    font-weight: 600;
    font-size: 14px;
    cursor: pointer;
-   color: gray;
+   color:#DCDCDC;
    letter-spacing:1px;
 }
 #menu li:hover {
@@ -32,12 +44,106 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 90px;
+    position:absolute;
+    width: 100%;
+    z-index: 100;
 }
 
+ul,section{
+    margin: 0;
+    padding: 0;
+}
+
+
+.banner{
+    background-image: url(assets/imagenes/Background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+
+    .titulo {
+        margin-top: 150px;
+        font-size: 100px;
+        width: 70%;
+        text-align: center;
+        font-weight: 700;
+        font-family: "PT Sans Bold";
+    }
+
+    .telefono {
+        margin: 70px o o !important;
+        font-size: 100px;
+        width: 70%;
+        text-align: center;
+        font-family: "PT Sans Bold";
+        line-height: 10px;
+
+    }
+
+    .texto {
+        margin-top: 70px;
+        font-size: 30px;
+        width: 70%;
+        text-align: center;
+        font-family: "PT Sans Italic";
+    }
+
+}
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+}
+
+
+.section-white{
+    height: 550px;
+    background-color: white;
+    width: 100%;
+    margin-top: 100vh;
+    color: #2F4F4F;
+    padding: 20px 50px;
+    
+    .white-container{
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        .columna {
+            width: 50%;
+            padding: 0 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                max-height: 500px;
+                max-width: 600px;
+            };
+            
+            h1{
+                font-size: 43px;
+                line-height: 50px;
+                width: 80%;
+                margin: 10px;
+            }
+            p{
+                font-weight: 600 ;
+                margin: 0px;
+                line-height: 30px;
+
+               
+            }
+
+        }
+    }
 
 }
