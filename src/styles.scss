@@ -1,51 +1,54 @@
 @font-face {
-    font-family: "PT Sans";
-    src: url("assets/fuentes/PT_Sans/PTSans-Regular.ttf");
+    font-family: "Open Sans Semibold";
+    src: url("assets/fuentes/OpenSans-Semibold.ttf");
 }
 
 @font-face {
-    font-family: "PT Sans Bold";
-    src: url("assets/fuentes/PT_Sans/PTSans-Bold.ttf");
+    font-family: "Open Sans Bold";
+    src: url("assets/fuentes/OpenSans-Bold.ttf");
 }
 
 @font-face {
-    font-family: "PT Sans Italic";
-    src: url("assets/fuentes/PT_Sans/PTSans-Italic.ttf");
+    font-family: "Open Sans";
+    src: url("assets/fuentes/OpenSans-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Open Sans ExtraBold";
+    src: url("assets/fuentes/OpenSans-ExtraBold.ttf");
+}
 
-body{
+body {
     background-color: black;
     color: white;
-    font-family: "PT Sans";
+    font-family: "Open Sans";
     position: relative;
     margin: 0;
+    overflow-x: hidden;
 }
 
-
 .menu li {
-    display:inline;
-    padding-left:8px;
-    padding-right:8px;
-   text-transform: uppercase;
-   font-weight: 700;
-   font-size: 14px;
-   cursor: pointer;
-   color:#DCDCDC;
-   letter-spacing:2px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    color: #dcdcdc;
+    letter-spacing: 0.7px;
 }
 .menu li:hover {
     color: white;
-
 }
 
 .menu {
-    font-family: "PT Sans Bold";
-    display:flex;
+    font-family: "Open Sans Bold";
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position:absolute;
+    position: absolute;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -55,69 +58,67 @@ body{
     transition-property: height, background-color;
 }
 
-
-ul,section{
+ul,
+section {
     margin: 0;
     padding: 0;
 }
 
-
-.banner{
+.banner {
     background-image: url(assets/imagenes/Background.jpg);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
-    position:absolute;
+    position: absolute;
     display: flex;
     align-items: center;
     flex-direction: column;
     z-index: -1;
 
     .titulo {
-        margin-top: 210px;
-        font-size: 115px;
-        width: 80%;
+        margin-top: 205px;
+        font-size: 110px;
+        width: 70%;
         text-align: center;
         font-weight: 700;
-        font-family: "PT Sans Bold";
+        font-family: "Open Sans Bold";
+        letter-spacing: initial;
     }
 
     .telefono {
         margin: 70px o o !important;
         font-size: 100px;
-        width: 80%;
+        width: 70%;
         text-align: center;
-        font-family: "PT Sans Bold";
+        font-family: "Open Sans Bold";
         line-height: 10px;
-
+        letter-spacing: initial;
     }
 
     .texto {
         font-size: 30px;
-        width: 80%;
+        width: 70%;
         text-align: center;
-        font-family: "PT Sans Italic";
+        font-family: "Open Sans";
+        font-style: italic;
         margin: 0;
     }
-
 }
-header{
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-
-.section-white{
+.section-white {
     height: 550px;
     background-color: white;
     width: 100%;
     margin-top: 100vh;
-    color: #2F4F4F;
+    color: #2f4f4f;
     padding: 20px 50px;
-    
-    .white-container{
+
+    .white-container {
         width: inherit;
         display: flex;
         flex-direction: row;
@@ -130,26 +131,36 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
-            img{
+            img {
                 max-height: 500px;
                 max-width: 600px;
-            };
-            
-            h1{
+            }
+
+            h1 {
                 font-size: 43px;
                 line-height: 50px;
                 width: 80%;
                 margin: 10px;
             }
-            p{
-                font-weight: 600 ;
+            p {
+                font-weight: 600;
                 margin: 0px;
                 line-height: 30px;
-
-               
             }
-
         }
     }
+}
 
+@media (max-width: 1300px) {
+    .banner {
+        .titulo,
+        .telefono,
+        .texto {
+            width: 87%;
+        }
+
+        .titulo {
+            font-size: 88px;
+        }
+    }
 }
