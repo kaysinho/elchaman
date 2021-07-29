@@ -8,6 +8,13 @@ import { BannerComponent } from './componentes/banner/banner.component';
 import { WhiteSectionComponent } from './componentes/white-section/white-section.component';
 import { CardSectionComponent } from './componentes/card-section/card-section.component';
 import { CommonModule } from '@angular/common';
+import { ImageTextComponent } from './componentes/image-text/image-text.component';
+import { TextImageComponent } from './componentes/text-image/text-image.component';
+import { TextVideoComponent } from './componentes/text-video/text-video.component';
+import { VideoTextComponent } from './componentes/video-text/video-text.component';
+import { UrlSafePipe } from './pipes/url-safe.pipe';
+import { ContactanosTextComponent } from './componentes/contactanos-text/contactanos-text.component';
+import { ContactanosComponent } from './componentes/contactanos/contactanos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +22,14 @@ import { CommonModule } from '@angular/common';
     MenuComponent,
     BannerComponent,
     WhiteSectionComponent,
-    CardSectionComponent
+    CardSectionComponent,
+    ImageTextComponent,
+    TextImageComponent,
+    TextVideoComponent,
+    VideoTextComponent,
+    UrlSafePipe,
+    ContactanosTextComponent,
+    ContactanosComponent
   ],
   imports: [
     BrowserModule,
