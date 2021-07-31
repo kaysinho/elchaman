@@ -15,6 +15,8 @@ import { VideoTextComponent } from './componentes/video-text/video-text.componen
 import { UrlSafePipe } from './pipes/url-safe.pipe';
 import { ContactanosTextComponent } from './componentes/contactanos-text/contactanos-text.component';
 import { ContactanosComponent } from './componentes/contactanos/contactanos.component';
+import { PhonePipe } from './pipes/phone/phone.pipe';
+import { AnuncioComponent } from './componentes/anuncio/anuncio.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ContactanosComponent } from './componentes/contactanos/contactanos.comp
     VideoTextComponent,
     UrlSafePipe,
     ContactanosTextComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    PhonePipe,
+    AnuncioComponent
   ],
   imports: [
     BrowserModule,

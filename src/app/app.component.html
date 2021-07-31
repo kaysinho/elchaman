@@ -12,6 +12,7 @@
 </section>
 
 <section class="section-green">
+    <h1>SERVICIOS</h1>
     <app-card-section class="container" ></app-card-section>
 </section>
 
@@ -19,20 +20,20 @@
     <app-video-text [title]="'SANTA MUERTE'" [text]="videoTextSection" [YouTubeVideo]="'https://www.youtube.com/embed/oc4zGmQX9uY'"></app-video-text>
 </section>
 
-<section style="background-color: black; color: white;">
-    <app-image-text [title]="'AMARRES DE AMOR'" [image]="'assets/images/marh.jpg'" [text]="imageTextSection"></app-image-text>
+<section style="background-color: black; color: white; display: flex; justify-content: center;">
+    <app-image-text [title]="'AMARRES DE AMOR'" [image]="'assets/imagenes/amarresdeamor.jpg'" [text]="imageTextSection"></app-image-text>
 </section>
 
-<section style="background-color: white; color: black;">
-    <app-text-image  [title]="'LIMPIEZAS'" [image]="'assets/images/consejos-de-plantas-medicinales.jpg'" [text]="text2" ></app-text-image>
+<section style="background-color: white; color: black; display: flex; justify-content: center;">
+    <app-text-image  [title]="'LIMPIEZAS'" [image]="'assets/imagenes/Limpiezas.jpg'" [text]="text2" ></app-text-image>
 </section>
 
-<section style="background-color: black; color: white;">
-    <app-image-text [title]="'TRABAJOS DE BRUJERÍA'" [image]="'assets/images/Ben-an.jpg'" [text]="textImageSection"></app-image-text>
+<section style="background-color: black; color: white; display: flex; justify-content: center;">
+    <app-image-text [title]="'TRABAJOS DE BRUJERÍA'" [image]="'assets/imagenes/Brujeria3.jpg'" [text]="textImageSection"></app-image-text>
 </section>
 
-<section style="opacity: 1; background-color: #061421;">
-    <app-contactanos-text class="contacta-con-nosotros"></app-contactanos-text>
+<section style="opacity: 1; background-color: #E53D33;">
+    <app-anuncio [title] ="'¡Llámanos!'" [description]="'Nosotros te ayudaremos'" phonenumber="{{ CELLPHONE | phone }}"></app-anuncio>
 </section>
 
 <section>
