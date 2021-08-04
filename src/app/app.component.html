@@ -6,36 +6,4 @@
         
     </app-banner>
 </section>
-
-<section id="section-white" class="section-white">
-    <app-white-section class="white-container" ></app-white-section>
-</section>
-
-<section class="section-green">
-    <h1>SERVICIOS</h1>
-    <app-card-section class="container" ></app-card-section>
-</section>
-
-<section style="background-color: white; color: black;">
-    <app-video-text [title]="'SANTA MUERTE'" [text]="videoTextSection" [YouTubeVideo]="'https://www.youtube.com/embed/oc4zGmQX9uY'"></app-video-text>
-</section>
-
-<section style="background-color: black; color: white; display: flex; justify-content: center;">
-    <app-image-text [title]="'AMARRES DE AMOR'" [image]="'assets/imagenes/amarresdeamor.jpg'" [text]="imageTextSection"></app-image-text>
-</section>
-
-<section style="background-color: white; color: black; display: flex; justify-content: center;">
-    <app-text-image  [title]="'LIMPIEZAS'" [image]="'assets/imagenes/Limpiezas.jpg'" [text]="text2" ></app-text-image>
-</section>
-
-<section style="background-color: black; color: white; display: flex; justify-content: center;">
-    <app-image-text [title]="'TRABAJOS DE BRUJERÍA'" [image]="'assets/imagenes/Brujeria3.jpg'" [text]="textImageSection"></app-image-text>
-</section>
-
-<section style="opacity: 1; background-color: #E53D33;">
-    <app-anuncio [title] ="'¡Llámanos!'" [description]="'Nosotros te ayudaremos'" phonenumber="{{ CELLPHONE | phone }}"></app-anuncio>
-</section>
-
-<section>
-    <app-contactanos class="contactanos"></app-contactanos>
-</section>
+<router-outlet></router-outlet>

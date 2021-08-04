@@ -17,6 +17,8 @@ import { ContactanosTextComponent } from './componentes/contactanos-text/contact
 import { ContactanosComponent } from './componentes/contactanos/contactanos.component';
 import { PhonePipe } from './pipes/phone/phone.pipe';
 import { AnuncioComponent } from './componentes/anuncio/anuncio.component';
+import { HomeComponent } from './views/home/home.component';
+import { ContactComponent } from './views/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { AnuncioComponent } from './componentes/anuncio/anuncio.component';
     ContactanosTextComponent,
     ContactanosComponent,
     PhonePipe,
-    AnuncioComponent
+    AnuncioComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
