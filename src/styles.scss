@@ -264,9 +264,24 @@ section.section-green {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
-        width: 450px;
+        background-color: #444442;
+        width: 600px;
         box-shadow: black 0.1em 0.1em 0.2em;
+
+        h1{
+            color: white;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        span{
+            color: #9b9b9b;
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
 
         .form-field {
             display: flex;
@@ -274,19 +289,22 @@ section.section-green {
             justify-content: space-between;
             width: 100%;
 
-            label{
-                margin-top: 8px;
-            }
+
             input,
             textarea {
-                background-color: gray;
+                background-color: #2d2d2d;
                 border: none;
                 color: white;
                 margin-bottom: 15px;
-                width: 300px;
+                width: 100%;
                 font-size: 14px;
-                padding: 5px;
+                padding-left: 15px;
             }
+
+            input::placeholder, textarea::placeholder {
+                color: #9b9b9b;
+                
+              }
 
             input {
                 height: 40px;
@@ -305,8 +323,21 @@ section.section-green {
             border: none;
             margin-top: 10px;
             font-size: 18px;
+            cursor: pointer;
         }
+
+        button:hover{
+            opacity: 0.9;
+        }
+
     }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 @media (max-width: 1300px) {

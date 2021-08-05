@@ -1,0 +1,18 @@
+<div class="btn-whatsapp">
+  <div class="chat-box" *ngIf="showBtn">
+    <span class="green">Estamos en directo y listos para chatear</span>
+    <span class="white">¡Hola! Cuéntanos cómo podemos ayudarte?</span>
+  </div>
+  <div class="message-box" *ngIf="showBtn">
+    <input type="text" placeholder="Responder.." name="text" [(ngModel)]="text">
+    <a href="https://web.whatsapp.com/send?phone=1{{ CELLPHONE }}&text={{ text }}... Vengo de la pagina de Amor y Magia 365" target="_blank">
+      <img src="./assets/imagenes/iconos/right-arrow.png">
+    </a>
+  </div>
+  <div class="whatsapp-box" (click)="showChat()">
+
+    <img src="assets/imagenes/iconos/whatsapp.png" alt="" />
+    <span> Háblanos por WhatsApp Aquí</span>
+  </div>
+
+</div>

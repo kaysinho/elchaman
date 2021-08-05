@@ -19,6 +19,9 @@ import { PhonePipe } from './pipes/phone/phone.pipe';
 import { AnuncioComponent } from './componentes/anuncio/anuncio.component';
 import { HomeComponent } from './views/home/home.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { BotonWhatsappComponent } from './componentes/boton-whatsapp/boton-whatsapp.component';
+import { BotonCallComponent } from './componentes/boton-call/boton-call.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,12 +40,15 @@ import { ContactComponent } from './views/contact/contact.component';
     PhonePipe,
     AnuncioComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    BotonWhatsappComponent,
+    BotonCallComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,9 +7,11 @@ const routes: Routes = [
   { path: 'inicio', component: HomeComponent },
   { path: 'contacto', component: ContactComponent },
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
+  { path: '',  redirectTo: '/inicio', pathMatch: 'full' },  // Default page
+
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
