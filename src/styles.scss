@@ -279,7 +279,7 @@ section.section-green {
 }
 
 .contacta-con-nosotros {
-    margin-top: 400px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,6 +357,28 @@ section.section-green {
     }
 }
 
+.amarres {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .container {
+        padding: 20px;
+        color: #4f5558;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 600px;
+
+        img{
+            margin-top: 50px;
+        }
+    }
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -409,7 +431,7 @@ button:focus {
                     font-size: 30px;
                 }
 
-                h2{
+                h2 {
                     font-size: 28px;
                 }
             }
@@ -429,7 +451,7 @@ button:focus {
             font-size: 45px;
         }
 
-        .container{
+        .container {
             width: 100%;
         }
         .cards {
@@ -502,19 +524,18 @@ button:focus {
     .contacta-con-nosotros {
         width: 100%;
         margin-bottom: 80px;
+        margin-top: 60px;
         form.contactanos {
-
             width: 90%;
-    
+
             h1 {
                 font-size: 30px;
             }
-    
+
             span {
                 font-size: 16px;
             }
-    
-    
+
             button {
                 background-color: #cc2e2e;
                 height: 50px;
@@ -525,11 +546,10 @@ button:focus {
                 font-size: 18px;
                 cursor: pointer;
             }
-    
+
             button:hover {
                 opacity: 0.9;
             }
         }
     }
-    
 }

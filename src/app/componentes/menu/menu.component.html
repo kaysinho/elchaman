@@ -1,13 +1,14 @@
 <ul id="menu" class="menu">
 
     <li>
-
         <a routerLink="/inicio">Inicio</a>
+    </li>
+    <li>
+        <a routerLink="/amarres">Amarres</a>
     </li>
     <li>
         {{ PAGE_NAME | uppercase }}
     </li>
-
     <li>
         Servicios
     </li>
@@ -22,6 +23,9 @@
     <ul class="list" *ngIf="showMobileList" (click)="showList()">
         <li>
             <a routerLink="/inicio">Inicio</a>
+        </li>
+        <li>
+            <a routerLink="/amarres">Amarres</a>
         </li>
         <li>
             {{ PAGE_NAME | uppercase }}

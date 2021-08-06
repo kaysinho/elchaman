@@ -1,1 +1,1 @@
-<h1 class="titulo animate__animated animate__fadeInLeft">BIENVENIDOS A <br> {{ PAGE_NAME | uppercase }}</h1>
+<h1 *ngIf="isHome()" class="titulo animate__animated animate__fadeInLeft">BIENVENIDOS A <br> {{ PAGE_NAME | uppercase }}</h1>

@@ -13,4 +13,11 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isHome() : boolean{
+    if (window.location.href.indexOf('inicio') > -1){
+      return true;
+    }
+    return false;
+  }
+
 }

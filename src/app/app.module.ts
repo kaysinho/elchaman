@@ -22,6 +22,7 @@ import { ContactComponent } from './views/contact/contact.component';
 import { BotonWhatsappComponent } from './componentes/boton-whatsapp/boton-whatsapp.component';
 import { BotonCallComponent } from './componentes/boton-call/boton-call.component';
 import { FormsModule } from '@angular/forms';
+import { AmarresComponent } from './views/amarres/amarres.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ContactComponent,
     BotonWhatsappComponent,
-    BotonCallComponent
+    BotonCallComponent,
+    AmarresComponent
   ],
   imports: [
     BrowserModule,
