@@ -373,7 +373,7 @@ section.section-green {
         background-color: white;
         width: 600px;
 
-        img{
+        img {
             margin-top: 50px;
         }
     }
@@ -549,6 +549,19 @@ button:focus {
 
             button:hover {
                 opacity: 0.9;
+            }
+        }
+    }
+
+    .amarres {
+        width: 100%;
+        margin-bottom: 80px;
+        margin-top: 60px;
+        .container {
+            width: 90%;
+
+            img {
+                max-width: 95%;
             }
         }
     }

@@ -1,8 +1,9 @@
 .btn-call {
     display: block;
     position: fixed;
-    right: 20px;
-    bottom: 340px;
+    right: auto;
+    left: 20px;
+    bottom: 380px;
     border-radius: 50%;
     line-height: 12px;
     text-align: center;
@@ -40,7 +41,8 @@ img{
   @media (max-width: 450px) {
     .btn-call {
         bottom: 8px;
-        right: 10px;
+        right: auto;
+        left: 20px;
         box-shadow: none;
     }
     img{
