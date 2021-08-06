@@ -8,9 +8,14 @@ import { PAGE_NAME } from 'src/environments/environment';
 })
 export class MenuComponent implements OnInit {
   PAGE_NAME : string = PAGE_NAME
+  showMobileList : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showList(){
+    this.showMobileList = !this.showMobileList;
   }
 
 }

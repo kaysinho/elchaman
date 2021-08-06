@@ -36,3 +36,15 @@ img{
     9% { transform: translate(1px, 2px) rotate(0deg); }
     10% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+  @media (max-width: 450px) {
+    .btn-call {
+        bottom: 8px;
+        right: 10px;
+        box-shadow: none;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+    }
+  }

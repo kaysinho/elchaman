@@ -109,3 +109,27 @@
 
 }
 
+@media (max-width: 450px) {
+    .btn-whatsapp {
+        bottom: 5px;
+        right: 50px;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        .whatsapp-box{
+            width: max-content;
+            height: max-content;
+            background-color: transparent;
+            box-shadow: none;
+
+            span{
+                display: none;
+            }
+
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+  }

@@ -1,17 +1,36 @@
 <ul id="menu" class="menu">
 
-<li>
-    
-    <a routerLink="/inicio">Inicio</a>
-</li>
-<li>
-    {{ PAGE_NAME | uppercase }}
-</li>
+    <li>
 
-<li>
-    Servicios
-</li>
-<li>
-    <a routerLink="/contacto">Contacto</a>
-</li>
+        <a routerLink="/inicio">Inicio</a>
+    </li>
+    <li>
+        {{ PAGE_NAME | uppercase }}
+    </li>
+
+    <li>
+        Servicios
+    </li>
+    <li>
+        <a routerLink="/contacto">Contacto</a>
+    </li>
 </ul>
+
+<div id="menu-mobile" class="menu-mobile">
+    <img src="./assets/imagenes/iconos/menu.png" width="20px" (click)="showList()">
+
+    <ul class="list" *ngIf="showMobileList" (click)="showList()">
+        <li>
+            <a routerLink="/inicio">Inicio</a>
+        </li>
+        <li>
+            {{ PAGE_NAME | uppercase }}
+        </li>
+        <li>
+            Servicios
+        </li>
+        <li>
+            <a routerLink="/contacto">Contacto</a>
+        </li>
+    </ul>
+</div>
