@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: 'inicio', component: HomeComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'amarres', component: AmarresComponent },
-  { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },  // Default page
 
 ];
