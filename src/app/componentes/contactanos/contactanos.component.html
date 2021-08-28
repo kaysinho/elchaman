@@ -1,18 +1,20 @@
 <form class="contactanos animate__animated animate__fadeInLeft">
-
+    <div class="close" (click)="goToHome()">
+        <img src="./assets/imagenes/iconos/close_white.png" width="24px">
+    </div>
     <h1>Contactanos</h1>
     <span>Nos gustaría escucharte!</span>
     <div class="form-field">
-        <input type="text" id="name" name="name" placeholder="Nombre *">
+        <input type="text" id="name" name="name" [(ngModel)]="name" placeholder="Nombre *" required>
     </div>
     <div class="form-field">
-        <input type="email" id="email" name="email" placeholder="Email *">
+        <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="Email *" required>
     </div>
     <div class="form-field">
-        <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+        <input type="text" id="telefono" name="telefono" [(ngModel)]="cellPhone" placeholder="Celular" required>
     </div>
     <div class="form-field">
-        <textarea type="text" id="text" name="text" placeholder="Mensaje"></textarea>
+        <textarea type="text" id="text" name="text" [(ngModel)]="text" placeholder="Mensaje" required></textarea>
     </div>
-    <button>Enviar</button>
+    <button (click)="sendMessage()">Enviar</button>
 </form>

@@ -117,6 +117,7 @@ section {
         height: 100vh;
         width: 100vw;
         background-size: cover;
+        background-position: center;
         position: absolute;
         display: flex;
         align-items: center;
@@ -286,6 +287,8 @@ section.section-green {
     align-items: center;
     text-align: center;
 
+
+
     form.contactanos {
         padding: 20px;
         color: #4f5558;
@@ -295,6 +298,14 @@ section.section-green {
         background-color: #444442;
         width: 600px;
         box-shadow: black 0.1em 0.1em 0.2em;
+
+        .close{
+            position: absolute;
+            right: 15px;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
 
         h1 {
             color: white;

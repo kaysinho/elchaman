@@ -16,7 +16,7 @@
     -moz-box-shadow: 9px 10px 41px -5px rgba(0, 0, 0, 0.75);
     box-shadow: 9px 10px 41px -5px rgba(0, 0, 0, 0.75);
 
-    .chat-box{
+    .chat-box {
         height: max-content;
         width: 260px;
         display: flex;
@@ -24,7 +24,7 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
-        .green{
+        .green {
             background-color: #22c15e;
             border-start-end-radius: 15px;
             border-start-start-radius: 15px;
@@ -36,10 +36,9 @@
             font-size: 14px;
             padding: 10px 20px;
             line-height: 20px;
-
         }
 
-        .white{
+        .white {
             background-color: white;
             border-end-start-radius: 15px;
             border-end-end-radius: 15px;
@@ -54,10 +53,9 @@
             color: gray;
             text-align: left;
         }
-
     }
 
-    .message-box{
+    .message-box {
         background-color: white;
         border-radius: 15px;
         height: 55px;
@@ -73,21 +71,28 @@
         width: 220px;
         margin-bottom: 10px;
 
-        input{
+        input {
             margin: 0;
             font-size: 14px;
             border: none;
             color: gray;
         }
 
-        img{
+        img {
             width: 20px;
             height: 20px;
             cursor: pointer;
         }
+
+        .whatsapp-desktop {
+            display: block;
+        }
+        .whatsapp-mobile {
+            display: none;
+        }
     }
 
-    .whatsapp-box{
+    .whatsapp-box {
         cursor: pointer;
         background-color: #22c15e;
         padding: 5px 20px;
@@ -98,16 +103,15 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        img{
+        img {
             width: 30px;
             height: 30px;
         }
     }
 
-    .whatsapp-box:hover{
+    .whatsapp-box:hover {
         background-color: green;
     }
-
 }
 
 @media (max-width: 450px) {
@@ -117,20 +121,28 @@
         margin: 0;
         padding: 0;
         box-shadow: none;
-        .whatsapp-box{
+        .message-box {
+            .whatsapp-mobile {
+                display: block;
+            }
+            .whatsapp-desktop {
+                display: none;
+            }
+        }
+        .whatsapp-box {
             width: max-content;
             height: max-content;
             background-color: transparent;
             box-shadow: none;
 
-            span{
+            span {
                 display: none;
             }
 
-            img{
+            img {
                 width: 30px;
                 height: 30px;
             }
         }
     }
-  }
+}

@@ -5,7 +5,11 @@
   </div>
   <div class="message-box" *ngIf="showBtn">
     <input type="text" placeholder="Responder.." name="text" [(ngModel)]="text">
-    <a href="https://web.whatsapp.com/send?phone=1{{ CELLPHONE }}&text={{ text }}... Vengo de la pagina de Amor y Magia 365" target="_blank">
+    <a class="whatsapp-desktop" href="https://web.whatsapp.com/send?phone=1{{ CELLPHONE }}&text={{ text }}... Vengo de la pagina de Amor y Magia 365" target="_blank">
+      <img src="./assets/imagenes/iconos/right-arrow.png">
+    </a>
+
+    <a class="whatsapp-mobile" href="https://wa.me/1{{ CELLPHONE }}/?text={{ text }}... Vengo de la pagina de Amor y Magia 365" target="_blank">
       <img src="./assets/imagenes/iconos/right-arrow.png">
     </a>
   </div>

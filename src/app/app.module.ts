@@ -23,6 +23,8 @@ import { BotonWhatsappComponent } from './componentes/boton-whatsapp/boton-whats
 import { BotonCallComponent } from './componentes/boton-call/boton-call.component';
 import { FormsModule } from '@angular/forms';
 import { AmarresComponent } from './views/amarres/amarres.component';
+import { GraciasComponent } from './componentes/gracias/gracias.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,13 +46,15 @@ import { AmarresComponent } from './views/amarres/amarres.component';
     ContactComponent,
     BotonWhatsappComponent,
     BotonCallComponent,
-    AmarresComponent
+    AmarresComponent,
+    GraciasComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
