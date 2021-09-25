@@ -21,7 +21,7 @@ export class ContactanosComponent implements OnInit {
   }
 
   goToHome(){
-    this.route.navigate(['/inicio'])
+    this.route.navigate(['/inicio/index'])
   }
 
 

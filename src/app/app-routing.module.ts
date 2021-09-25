@@ -6,11 +6,11 @@ import { ContactComponent } from './views/contact/contact.component';
 import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: HomeComponent },
+  { path: 'inicio/:section', component: HomeComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'amarres', component: AmarresComponent },
   { path: 'gracias', component: GraciasComponent },
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },  // Default page
+  { path: '', redirectTo: '/inicio/index', pathMatch: 'full' },  // Default page
 
 ];
 @NgModule({

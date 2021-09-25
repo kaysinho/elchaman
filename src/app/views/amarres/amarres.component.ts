@@ -14,6 +14,6 @@ export class AmarresComponent implements OnInit {
   }
 
   goToHome(){
-    this.route.navigate(['/inicio'])
+    this.route.navigate(['/inicio/index'])
   }
 }
